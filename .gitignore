@@ -1,0 +1,36 @@
+# Python & Virtual Environments
+.venv/
+backend/.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Generated Media and Temporary Storage
+backend/storage/uploads/*
+!backend/storage/uploads/.gitkeep
+backend/storage/outputs/*
+!backend/storage/outputs/.gitkeep
+backend/storage/temp/*
+!backend/storage/temp/.gitkeep
+
+# Large AI Model Weights
+backend/models/piper_voices/*.onnx
+backend/models/piper_voices/*.json
+backend/models/wav2lip/*.onnx
+backend/models/*.onnx
+
+# Node & Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.*.local
+
+# OS Artifacts
+Thumbs.db
+[Dd]esktop.ini
+.DS_Store
